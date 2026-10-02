@@ -75,10 +75,6 @@
       margin: 0 auto;
     }
 
-    /* =========================
-       HEADER
-    ========================== */
-
     header {
       position: fixed;
       top: 0;
@@ -164,10 +160,6 @@
       cursor: pointer;
       font-size: 1.3rem;
     }
-
-    /* =========================
-       HERO
-    ========================== */
 
     .hero {
       padding: 145px 0 90px;
@@ -304,11 +296,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(
-        to top,
-        rgba(36, 16, 30, 0.2),
-        transparent 45%
-      );
+      background: linear-gradient(to top, rgba(36, 16, 30, 0.2), transparent 45%);
       pointer-events: none;
     }
 
@@ -334,7 +322,6 @@
     .hero-badge strong {
       font-family: Georgia, serif;
       font-size: 1.4rem;
-      color: #fff;
     }
 
     .hero-badge span {
@@ -342,10 +329,6 @@
       color: #e7cfd5;
       margin-top: 5px;
     }
-
-    /* =========================
-       GENERAL SECTIONS
-    ========================== */
 
     section {
       padding: 95px 0;
@@ -374,10 +357,6 @@
       color: var(--muted);
       font-size: 0.98rem;
     }
-
-    /* =========================
-       ABOUT
-    ========================== */
 
     .about {
       background: white;
@@ -448,10 +427,6 @@
       margin-right: 8px;
     }
 
-    /* =========================
-       SERVICES
-    ========================== */
-
     .services {
       background: var(--cream);
     }
@@ -499,10 +474,6 @@
       color: var(--muted);
       font-size: 0.84rem;
     }
-
-    /* =========================
-       GALLERY
-    ========================== */
 
     .gallery {
       background: white;
@@ -599,10 +570,6 @@
       color: #e6cbd1 !important;
     }
 
-    /* =========================
-       FEATURED DESIGN
-    ========================== */
-
     .featured {
       background: var(--deep-plum);
       color: white;
@@ -649,10 +616,6 @@
       font-size: 0.75rem;
       margin-bottom: 25px;
     }
-
-    /* =========================
-       BABY SECTION
-    ========================== */
 
     .baby {
       background: var(--cream);
@@ -726,10 +689,6 @@
       font-size: 0.76rem;
       margin-bottom: 24px;
     }
-
-    /* =========================
-       CONTACT
-    ========================== */
 
     .contact {
       background: white;
@@ -816,10 +775,6 @@
       margin-bottom: 22px;
     }
 
-    /* =========================
-       FOOTER
-    ========================== */
-
     footer {
       background: #1b0c17;
       color: white;
@@ -876,10 +831,6 @@
       font-size: 0.75rem;
     }
 
-    /* =========================
-       FLOATING WHATSAPP
-    ========================== */
-
     .floating-whatsapp {
       position: fixed;
       right: 20px;
@@ -901,10 +852,6 @@
       transform: scale(1.08);
     }
 
-    /* =========================
-       FALLBACK IMAGE
-    ========================== */
-
     .image-placeholder {
       background:
         radial-gradient(circle at 30% 20%, rgba(255,255,255,0.35), transparent 25%),
@@ -923,10 +870,6 @@
       letter-spacing: 2px;
     }
 
-    /* =========================
-       ANIMATION
-    ========================== */
-
     .reveal {
       opacity: 0;
       transform: translateY(22px);
@@ -937,10 +880,6 @@
       opacity: 1;
       transform: translateY(0);
     }
-
-    /* =========================
-       RESPONSIVE
-    ========================== */
 
     @media (max-width: 1000px) {
       .hero-grid,
@@ -1109,13 +1048,8 @@
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
-
   <header>
     <div class="container nav">
-
       <a href="#home" class="logo">
         <span class="logo-mark">ME</span>
         MERCY EMPIRE
@@ -1146,26 +1080,16 @@
           </a>
         </li>
       </ul>
-
     </div>
   </header>
-
-
-  <!-- =========================
-       HERO
-  ========================== -->
 
   <main>
 
     <section class="hero" id="home">
-
       <div class="container hero-grid">
 
         <div class="hero-content reveal">
-
-          <div class="eyebrow">
-            Beauty • Fashion • Style
-          </div>
+          <div class="eyebrow">Beauty • Fashion • Style</div>
 
           <h1>
             BEAUTY.<br />
@@ -1187,7 +1111,6 @@
           </div>
 
           <div class="buttons">
-
             <a href="#gallery" class="btn btn-primary">
               View Our Work →
             </a>
@@ -1199,17 +1122,13 @@
             >
               Chat on WhatsApp
             </a>
-
           </div>
-
         </div>
 
-
         <div class="hero-image-wrap reveal">
-
           <div class="hero-image">
             <img
-              src="images/curly-hairstyle.jpg"
+              src="curly-hairstyle.jpg"
               alt="Mercy Empire original hairstyle work"
               onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
             />
@@ -1219,26 +1138,17 @@
             <strong>Mercy Empire</strong>
             <span>Beauty & Fashion</span>
           </div>
-
         </div>
 
       </div>
-
     </section>
 
-
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
     <section class="about" id="about">
-
       <div class="container about-grid">
 
         <div class="about-card reveal">
-
           <img
-            src="images/braided-hairstyle.jpg"
+            src="braided-hairstyle.jpg"
             alt="Mercy Empire original braided hairstyle"
             onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
           />
@@ -1246,15 +1156,10 @@
           <div class="about-card-label">
             Original Mercy Empire Work
           </div>
-
         </div>
 
-
         <div class="about-content reveal">
-
-          <div class="eyebrow">
-            About Mercy Empire
-          </div>
+          <div class="eyebrow">About Mercy Empire</div>
 
           <h3>
             Where beauty meets personal style.
@@ -1278,27 +1183,16 @@
             <li>Stylish Accessories</li>
             <li>Baby Wear & Essentials</li>
           </ul>
-
         </div>
 
       </div>
-
     </section>
 
-
-    <!-- =========================
-         SERVICES
-    ========================== -->
-
     <section class="services" id="services">
-
       <div class="container">
 
         <div class="section-heading center reveal">
-
-          <div class="eyebrow">
-            What We Offer
-          </div>
+          <div class="eyebrow">What We Offer</div>
 
           <h2>
             Everything you need to express your style.
@@ -1308,87 +1202,55 @@
             Explore the different services and product categories
             available from Mercy Empire.
           </p>
-
         </div>
-
 
         <div class="service-grid">
 
           <article class="service-card reveal">
-
             <div class="service-icon">✂</div>
-
             <h3>Hairdressing</h3>
-
             <p>
               Beautiful hairstyles created to complement your look
               and personal style.
             </p>
-
           </article>
 
-
           <article class="service-card reveal">
-
             <div class="service-icon">♢</div>
-
             <h3>Fashion Designing</h3>
-
             <p>
               Fashion pieces designed with creativity, personality,
               and attention to detail.
             </p>
-
           </article>
 
-
           <article class="service-card reveal">
-
             <div class="service-icon">✦</div>
-
             <h3>Accessories</h3>
-
             <p>
               Stylish accessories and beautiful finishing touches
               to complete your outfit.
             </p>
-
           </article>
 
-
           <article class="service-card reveal">
-
             <div class="service-icon">♡</div>
-
             <h3>Baby Wear & Essentials</h3>
-
             <p>
               Baby wear and everyday essentials for your little ones.
               Contact us to ask about available items.
             </p>
-
           </article>
 
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =========================
-         GALLERY
-    ========================== -->
-
     <section class="gallery" id="gallery">
-
       <div class="container">
 
         <div class="section-heading center reveal">
-
-          <div class="eyebrow">
-            Our Gallery
-          </div>
+          <div class="eyebrow">Our Gallery</div>
 
           <h2>
             A glimpse of Mercy Empire.
@@ -1397,264 +1259,154 @@
           <p>
             Explore selected hairstyles, accessories, and fashion work.
           </p>
-
         </div>
-
 
         <div class="filter-buttons">
-
-          <button class="filter-btn active" data-filter="all">
-            All
-          </button>
-
-          <button class="filter-btn" data-filter="hair">
-            Hair
-          </button>
-
-          <button class="filter-btn" data-filter="accessories">
-            Accessories
-          </button>
-
-          <button class="filter-btn" data-filter="fashion">
-            Fashion
-          </button>
-
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="hair">Hair</button>
+          <button class="filter-btn" data-filter="accessories">Accessories</button>
+          <button class="filter-btn" data-filter="fashion">Fashion</button>
         </div>
-
 
         <div class="gallery-grid">
 
-
-          <!-- ORIGINAL -->
-
           <article class="gallery-item reveal" data-category="hair">
-
             <img
-              src="images/curly-hairstyle.jpg"
+              src="curly-hairstyle.jpg"
               alt="Curly hairstyle by Mercy Empire"
               onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
             />
-
             <div class="gallery-overlay">
               <strong>Curly Hairstyle</strong>
-              <span class="original-badge">
-                ✦ Mercy Empire Original
-              </span>
+              <span class="original-badge">✦ Mercy Empire Original</span>
             </div>
-
           </article>
 
-
-          <!-- ORIGINAL -->
-
           <article class="gallery-item reveal" data-category="hair">
-
             <img
-              src="images/braided-hairstyle.jpg"
+              src="braided-hairstyle.jpg"
               alt="Braided hairstyle by Mercy Empire"
               onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
             />
-
             <div class="gallery-overlay">
               <strong>Braided Hairstyle</strong>
-              <span class="original-badge">
-                ✦ Mercy Empire Original
-              </span>
+              <span class="original-badge">✦ Mercy Empire Original</span>
             </div>
-
           </article>
 
-
-          <!-- ORIGINAL -->
-
           <article class="gallery-item reveal" data-category="accessories">
-
             <img
-              src="images/pastel-scrunchies.jpg"
+              src="pastel-scrunchies.jpg"
               alt="Pastel scrunchies by Mercy Empire"
               onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
             />
-
             <div class="gallery-overlay">
               <strong>Pastel Scrunchies</strong>
-              <span class="original-badge">
-                ✦ Mercy Empire Original
-              </span>
+              <span class="original-badge">✦ Mercy Empire Original</span>
             </div>
-
           </article>
 
-
-          <!-- ORIGINAL -->
-
           <article class="gallery-item reveal" data-category="accessories">
-
             <img
-              src="images/neutral-scrunchies.jpg"
+              src="neutral-scrunchies.jpg"
               alt="Neutral tone scrunchies by Mercy Empire"
               onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
             />
-
             <div class="gallery-overlay">
               <strong>Neutral Scrunchies</strong>
-              <span class="original-badge">
-                ✦ Mercy Empire Original
-              </span>
+              <span class="original-badge">✦ Mercy Empire Original</span>
             </div>
-
           </article>
 
-
-          <!-- SAMPLE -->
-
           <article class="gallery-item reveal" data-category="fashion">
-
             <img
-              src="images/green-jumpsuit.jpg"
+              src="green-jumpsuit.jpg"
               alt="Green jumpsuit fashion inspiration"
               onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
             />
-
             <div class="gallery-overlay">
               <strong>Green Jumpsuit</strong>
-              <span class="sample-badge">
-                Sample / Inspiration
-              </span>
+              <span class="sample-badge">Sample / Inspiration</span>
             </div>
-
           </article>
 
-
-          <!-- SAMPLE -->
-
           <article class="gallery-item reveal" data-category="fashion">
-
             <img
-              src="images/red-white-dress.jpg"
+              src="red-white-dress.jpg"
               alt="Red and white dress fashion inspiration"
               onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
             />
-
             <div class="gallery-overlay">
               <strong>Red & White Dress</strong>
-              <span class="sample-badge">
-                Sample / Inspiration
-              </span>
+              <span class="sample-badge">Sample / Inspiration</span>
             </div>
-
           </article>
 
-
-          <!-- SAMPLE -->
-
           <article class="gallery-item reveal" data-category="fashion">
-
             <img
-              src="images/floral-skirt.jpg"
+              src="floral-skirt.jpg"
               alt="Floral skirt fashion inspiration"
               onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
             />
-
             <div class="gallery-overlay">
               <strong>Floral Skirt</strong>
-              <span class="sample-badge">
-                Sample / Inspiration
-              </span>
+              <span class="sample-badge">Sample / Inspiration</span>
             </div>
-
           </article>
 
-
-          <!-- SAMPLE -->
-
           <article class="gallery-item reveal" data-category="fashion">
-
             <img
-              src="images/blue-corset.jpg"
+              src="blue-corset.jpg"
               alt="Blue corset fashion inspiration"
               onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
             />
-
             <div class="gallery-overlay">
               <strong>Blue Corset</strong>
-              <span class="sample-badge">
-                Sample / Inspiration
-              </span>
+              <span class="sample-badge">Sample / Inspiration</span>
             </div>
-
           </article>
 
-
-          <!-- SAMPLE -->
-
           <article class="gallery-item reveal" data-category="fashion">
-
             <img
-              src="images/black-orange-blouse.jpg"
+              src="black-orange-blouse.jpg"
               alt="Black and orange blouse fashion inspiration"
               onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
             />
-
             <div class="gallery-overlay">
               <strong>Black & Orange Blouse</strong>
-              <span class="sample-badge">
-                Sample / Inspiration
-              </span>
+              <span class="sample-badge">Sample / Inspiration</span>
             </div>
-
           </article>
 
-
-          <!-- SAMPLE -->
-
           <article class="gallery-item reveal" data-category="fashion">
-
             <img
-              src="images/formal-outfit.jpg"
+              src="formal-outfit.jpg"
               alt="Gold and silver formal outfit inspiration"
               onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
             />
-
             <div class="gallery-overlay">
               <strong>Formal Outfit</strong>
-              <span class="sample-badge">
-                Sample / Inspiration
-              </span>
+              <span class="sample-badge">Sample / Inspiration</span>
             </div>
-
           </article>
 
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =========================
-         FEATURED ORIGINAL DESIGN
-    ========================== -->
-
     <section class="featured">
-
       <div class="container featured-grid">
 
         <div class="featured-image reveal">
-
           <img
-            src="images/ankara-corset.jpg"
+            src="ankara-corset.jpg"
             alt="Original Ankara corset design by Mercy Empire"
             onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
           />
-
         </div>
 
-
         <div class="featured-content reveal">
-
-          <div class="eyebrow">
-            Featured Design
-          </div>
+          <div class="eyebrow">Featured Design</div>
 
           <span class="featured-note">
             ✦ Original Mercy Empire Work
@@ -1677,28 +1429,18 @@
           >
             Ask About Fashion Designing
           </a>
-
         </div>
 
       </div>
-
     </section>
 
-
-    <!-- =========================
-         BABY SECTION
-    ========================== -->
-
     <section class="baby">
-
       <div class="container">
 
         <div class="baby-box reveal">
 
           <div class="baby-image">
-
             <div class="baby-placeholder">
-
               <div class="baby-icon">🧸</div>
 
               <h3>
@@ -1708,11 +1450,8 @@
               <p>
                 Baby wear and everyday essentials.
               </p>
-
             </div>
-
           </div>
-
 
           <div class="baby-content">
 
@@ -1746,18 +1485,10 @@
           </div>
 
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
     <section class="contact" id="contact">
-
       <div class="container">
 
         <div class="section-heading center reveal">
@@ -1777,7 +1508,6 @@
 
         </div>
 
-
         <div class="contact-grid">
 
           <div class="contact-card reveal">
@@ -1786,62 +1516,45 @@
               Contact Details
             </h3>
 
-
             <div class="contact-item">
-
               <div class="contact-icon">⌖</div>
-
               <div>
                 <small>Location</small>
                 <strong>
                   No. 24 Omoku Street, D/Line, Port Harcourt
                 </strong>
               </div>
-
             </div>
 
-
             <div class="contact-item">
-
               <div class="contact-icon">☎</div>
-
               <div>
                 <small>Phone / WhatsApp</small>
                 <strong>
                   0706 077 6186
                 </strong>
               </div>
-
             </div>
 
-
             <div class="contact-item">
-
               <div class="contact-icon">◎</div>
-
               <div>
                 <small>Instagram</small>
                 <strong>
                   Mercy Empire
                 </strong>
               </div>
-
             </div>
 
-
             <div class="contact-item">
-
               <div class="contact-icon">♪</div>
-
               <div>
                 <small>TikTok</small>
                 <strong>
                   Mercy Empire
                 </strong>
               </div>
-
             </div>
-
 
             <a
               href="https://wa.me/2347060776186?text=Hello%20Mercy%20Empire%2C%20I%27d%20like%20to%20make%20an%20enquiry."
@@ -1853,7 +1566,6 @@
             </a>
 
           </div>
-
 
           <div class="map-card reveal">
 
@@ -1878,17 +1590,10 @@
           </div>
 
         </div>
-
       </div>
-
     </section>
 
   </main>
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
 
   <footer>
 
@@ -1910,7 +1615,6 @@
 
         </div>
 
-
         <div>
 
           <div class="footer-title">
@@ -1926,7 +1630,6 @@
 
         </div>
 
-
         <div>
 
           <div class="footer-title">
@@ -1934,6 +1637,7 @@
           </div>
 
           <ul class="footer-links">
+
             <li>
               <a href="tel:+2347060776186">
                 0706 077 6186
@@ -1952,12 +1656,12 @@
             <li>
               Port Harcourt, Nigeria
             </li>
+
           </ul>
 
         </div>
 
       </div>
-
 
       <div class="copyright">
         © <span id="year"></span> MERCY EMPIRE. All rights reserved.
@@ -1966,11 +1670,6 @@
     </div>
 
   </footer>
-
-
-  <!-- =========================
-       FLOATING WHATSAPP
-  ========================== -->
 
   <a
     class="floating-whatsapp"
@@ -1981,55 +1680,31 @@
     ☎
   </a>
 
-
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
-
   <script>
-
-    /* Mobile navigation */
-
     const menuBtn = document.getElementById("menuBtn");
     const navLinks = document.getElementById("navLinks");
 
     menuBtn.addEventListener("click", () => {
-
       navLinks.classList.toggle("open");
 
       const isOpen = navLinks.classList.contains("open");
 
       menuBtn.setAttribute("aria-expanded", isOpen);
-
       menuBtn.textContent = isOpen ? "×" : "☰";
-
     });
-
-
-    /* Close mobile menu after clicking a link */
 
     document.querySelectorAll(".nav-links a").forEach(link => {
-
       link.addEventListener("click", () => {
-
         navLinks.classList.remove("open");
-
         menuBtn.setAttribute("aria-expanded", "false");
-
         menuBtn.textContent = "☰";
-
       });
-
     });
-
-
-    /* Gallery filters */
 
     const filterButtons = document.querySelectorAll(".filter-btn");
     const galleryItems = document.querySelectorAll(".gallery-item");
 
     filterButtons.forEach(button => {
-
       button.addEventListener("click", () => {
 
         filterButtons.forEach(btn => {
@@ -2052,48 +1727,33 @@
           }
 
         });
-
       });
-
     });
-
-
-    /* Scroll reveal animation */
 
     const revealElements = document.querySelectorAll(".reveal");
 
     const revealObserver = new IntersectionObserver(
       entries => {
-
         entries.forEach(entry => {
 
           if (entry.isIntersecting) {
-
             entry.target.classList.add("visible");
-
             revealObserver.unobserve(entry.target);
-
           }
 
         });
-
       },
       {
         threshold: 0.12
       }
     );
 
-
     revealElements.forEach(element => {
       revealObserver.observe(element);
     });
 
-
-    /* Current year */
-
     document.getElementById("year").textContent =
       new Date().getFullYear();
-
   </script>
 
 </body>
