@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>MERCY EMPIRE | Beauty • Fashion • Accessories</title>
+
+  <meta
+    name="description"
+    content="MERCY EMPIRE offers professional hairdressing, fashion designing, accessories, baby wear and essentials in D/Line, Port Harcourt."
+  />
+  <meta name="theme-color" content="#35152b" />
+
+  <meta property="og:title" content="MERCY EMPIRE | Beauty • Fashion • Style" />
+  <meta
+    property="og:description"
+    content="Hairdressing, fashion designing, accessories, baby wear and essentials."
+  />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --plum: #35152b;
+      --deep-plum: #24101e;
+      --rose: #b76e79;
+      --soft-rose: #ead0d5;
+      --cream: #fbf7f2;
+      --warm-white: #fffdfb;
+      --gold: #c7a15a;
+      --text: #2a2225;
+      --muted: #74686d;
+      --border: rgba(53, 21, 43, 0.1);
+      --shadow: 0 18px 50px rgba(53, 21, 43, 0.1);
+      --radius: 24px;
+      --max-width: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--warm-white);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255, 253, 251, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--plum);
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--plum);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-family: Georgia, serif;
+      font-size: 0.9rem;
+      border: 2px solid var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #4d4146;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--rose);
+    }
+
+    .nav-cta {
+      background: var(--plum) !important;
+      color: white !important;
+      padding: 11px 18px;
+      border-radius: 999px;
+    }
+
+    .nav-cta:hover {
+      background: var(--deep-plum) !important;
+      transform: translateY(-2px);
+    }
+
+    .menu-btn {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: white;
+      color: var(--plum);
+      cursor: pointer;
+      font-size: 1.3rem;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      padding: 145px 0 90px;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(183, 110, 121, 0.18), transparent 28%),
+        radial-gradient(circle at 10% 80%, rgba(199, 161, 90, 0.13), transparent 25%),
+        var(--cream);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--rose);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--plum);
+      font-size: clamp(3rem, 6vw, 5.8rem);
+      line-height: 0.98;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span {
+      color: var(--rose);
+      font-style: italic;
+    }
+
+    .hero-text {
+      max-width: 590px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 28px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 34px;
+    }
+
+    .hero-tags span {
+      padding: 8px 13px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      color: #66585e;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 21px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      transition: 0.25s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--plum);
+      color: white;
+      box-shadow: 0 12px 28px rgba(53, 21, 43, 0.18);
+    }
+
+    .btn-primary:hover {
+      background: var(--deep-plum);
+      transform: translateY(-3px);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--plum);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--rose);
+      transform: translateY(-3px);
+    }
+
+    .hero-image-wrap {
+      position: relative;
+      min-height: 590px;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0 30px 25px 0;
+      overflow: hidden;
+      border-radius: 180px 180px 28px 28px;
+      background: linear-gradient(145deg, #ead8d2, #c9a9aa);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-image img {
+      object-position: center;
+    }
+
+    .hero-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(36, 16, 30, 0.2),
+        transparent 45%
+      );
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 175px;
+      min-height: 175px;
+      padding: 25px;
+      border-radius: 50%;
+      background: var(--plum);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      border: 5px solid var(--cream);
+      box-shadow: var(--shadow);
+      z-index: 2;
+    }
+
+    .hero-badge strong {
+      font-family: Georgia, serif;
+      font-size: 1.4rem;
+      color: #fff;
+    }
+
+    .hero-badge span {
+      font-size: 0.72rem;
+      color: #e7cfd5;
+      margin-top: 5px;
+    }
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================== */
+
+    section {
+      padding: 95px 0;
+    }
+
+    .section-heading {
+      max-width: 690px;
+      margin-bottom: 45px;
+    }
+
+    .section-heading.center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--plum);
+      font-size: clamp(2.3rem, 4vw, 3.6rem);
+      line-height: 1.08;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about-card {
+      position: relative;
+      min-height: 440px;
+      border-radius: 30px;
+      overflow: hidden;
+      background: #e9d8d2;
+      box-shadow: var(--shadow);
+    }
+
+    .about-card img {
+      object-position: center;
+    }
+
+    .about-card-label {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      background: rgba(53, 21, 43, 0.9);
+      color: white;
+      padding: 11px 15px;
+      border-radius: 12px;
+      font-size: 0.78rem;
+    }
+
+    .about-content h3 {
+      font-family: Georgia, serif;
+      color: var(--plum);
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .feature-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px;
+      margin-top: 25px;
+    }
+
+    .feature-list li {
+      background: var(--cream);
+      padding: 14px;
+      border-radius: 13px;
+      font-size: 0.86rem;
+      color: #55494e;
+    }
+
+    .feature-list li::before {
+      content: "✦";
+      color: var(--gold);
+      margin-right: 8px;
+    }
+
+    /* =========================
+       SERVICES
+    ========================== */
+
+    .services {
+      background: var(--cream);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 17px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 28px 22px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      transition: 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+      border-color: rgba(183, 110, 121, 0.3);
+    }
+
+    .service-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      background: var(--soft-rose);
+      color: var(--plum);
+      font-size: 1.25rem;
+      margin-bottom: 19px;
+    }
+
+    .service-card h3 {
+      font-family: Georgia, serif;
+      color: var(--plum);
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    /* =========================
+       GALLERY
+    ========================== */
+
+    .gallery {
+      background: white;
+    }
+
+    .filter-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 30px;
+    }
+
+    .filter-btn {
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--muted);
+      padding: 9px 17px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 700;
+      transition: 0.25s ease;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--plum);
+      color: white;
+      border-color: var(--plum);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .gallery-item {
+      position: relative;
+      height: 320px;
+      overflow: hidden;
+      border-radius: 20px;
+      background: #eee;
+      transition: 0.3s ease;
+    }
+
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(6) {
+      height: 390px;
+    }
+
+    .gallery-item img {
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-item.hidden {
+      display: none;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      padding: 13px;
+      border-radius: 14px;
+      background: rgba(36, 16, 30, 0.88);
+      color: white;
+      backdrop-filter: blur(8px);
+    }
+
+    .gallery-overlay strong {
+      display: block;
+      font-size: 0.82rem;
+    }
+
+    .gallery-overlay span {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 0.66rem;
+      color: #ead5da;
+    }
+
+    .original-badge {
+      color: #f0d59b !important;
+    }
+
+    .sample-badge {
+      color: #e6cbd1 !important;
+    }
+
+    /* =========================
+       FEATURED DESIGN
+    ========================== */
+
+    .featured {
+      background: var(--deep-plum);
+      color: white;
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .featured-image {
+      height: 570px;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #6b4854;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.28);
+    }
+
+    .featured-content .eyebrow {
+      color: #d6b3bb;
+    }
+
+    .featured-content h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      line-height: 1.02;
+      margin-bottom: 20px;
+    }
+
+    .featured-content p {
+      color: #d8c8ce;
+      max-width: 580px;
+      margin-bottom: 25px;
+    }
+
+    .featured-note {
+      display: inline-block;
+      padding: 9px 14px;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 999px;
+      color: #e8d29d;
+      font-size: 0.75rem;
+      margin-bottom: 25px;
+    }
+
+    /* =========================
+       BABY SECTION
+    ========================== */
+
+    .baby {
+      background: var(--cream);
+    }
+
+    .baby-box {
+      background: white;
+      border-radius: 30px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      box-shadow: var(--shadow);
+    }
+
+    .baby-image {
+      min-height: 430px;
+      background:
+        linear-gradient(rgba(183,110,121,0.1), rgba(53,21,43,0.08)),
+        #ead7d8;
+      display: grid;
+      place-items: center;
+      padding: 25px;
+      text-align: center;
+      color: var(--plum);
+    }
+
+    .baby-placeholder {
+      max-width: 320px;
+    }
+
+    .baby-placeholder .baby-icon {
+      font-size: 4rem;
+      margin-bottom: 12px;
+    }
+
+    .baby-placeholder h3 {
+      font-family: Georgia, serif;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .baby-placeholder p {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .baby-content {
+      padding: 55px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .baby-content h2 {
+      font-family: Georgia, serif;
+      color: var(--plum);
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .baby-content p {
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
+
+    .sample-note {
+      background: #fff7f1;
+      border-left: 3px solid var(--gold);
+      padding: 13px 15px;
+      color: #6b5b55;
+      font-size: 0.76rem;
+      margin-bottom: 24px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact {
+      background: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 35px;
+    }
+
+    .contact-card {
+      padding: 35px;
+      background: var(--cream);
+      border-radius: 25px;
+      border: 1px solid var(--border);
+    }
+
+    .contact-card h3 {
+      font-family: Georgia, serif;
+      color: var(--plum);
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .contact-icon {
+      flex: 0 0 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: white;
+      display: grid;
+      place-items: center;
+      color: var(--rose);
+    }
+
+    .contact-item small {
+      display: block;
+      color: #918287;
+      margin-bottom: 2px;
+    }
+
+    .contact-item strong {
+      color: var(--plum);
+      font-size: 0.9rem;
+    }
+
+    .map-card {
+      min-height: 390px;
+      border-radius: 25px;
+      background:
+        linear-gradient(rgba(53,21,43,0.88), rgba(53,21,43,0.88)),
+        radial-gradient(circle at 20% 30%, #b76e79, transparent 25%),
+        radial-gradient(circle at 80% 70%, #c7a15a, transparent 25%),
+        #35152b;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 40px;
+    }
+
+    .map-pin {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .map-card h3 {
+      font-family: Georgia, serif;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .map-card p {
+      max-width: 450px;
+      color: #dfd0d5;
+      margin-bottom: 22px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #1b0c17;
+      color: white;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr 0.7fr;
+      gap: 40px;
+      padding-bottom: 35px;
+    }
+
+    .footer-logo {
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    .footer-text {
+      color: #bdaeb5;
+      max-width: 420px;
+      font-size: 0.85rem;
+    }
+
+    .footer-title {
+      font-weight: 800;
+      margin-bottom: 15px;
+      color: #f0dfe4;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+
+    .footer-links a {
+      color: #bdaeb5;
+      font-size: 0.82rem;
+      transition: 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,0.09);
+      padding-top: 20px;
+      text-align: center;
+      color: #8e7e86;
+      font-size: 0.75rem;
+    }
+
+    /* =========================
+       FLOATING WHATSAPP
+    ========================== */
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 57px;
+      height: 57px;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 1.45rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      z-index: 999;
+      transition: 0.25s ease;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    /* =========================
+       FALLBACK IMAGE
+    ========================== */
+
+    .image-placeholder {
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.35), transparent 25%),
+        linear-gradient(145deg, #ead8d2, #c3a0a3);
+      display: grid;
+      place-items: center;
+      color: var(--plum);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .image-placeholder::after {
+      content: "MERCY EMPIRE";
+      font-family: Georgia, serif;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+    }
+
+    /* =========================
+       ANIMATION
+    ========================== */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 1000px) {
+      .hero-grid,
+      .about-grid,
+      .featured-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image-wrap {
+        min-height: 560px;
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .baby-box,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      header {
+        position: fixed;
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 68px;
+        left: 4%;
+        right: 4%;
+        padding: 20px;
+        background: rgba(255, 253, 251, 0.98);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 12px;
+      }
+
+      .nav-cta {
+        text-align: center;
+        margin-top: 5px;
+      }
+
+      .hero {
+        padding-top: 115px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.8rem, 14vw, 4.4rem);
+      }
+
+      .hero-image-wrap {
+        min-height: 470px;
+      }
+
+      .hero-image {
+        inset: 0 15px 20px 0;
+        border-radius: 130px 130px 24px 24px;
+      }
+
+      .hero-badge {
+        width: 135px;
+        min-height: 135px;
+        right: 0;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .gallery-item,
+      .gallery-item:nth-child(1),
+      .gallery-item:nth-child(6) {
+        height: 280px;
+      }
+
+      .featured-image {
+        height: 430px;
+      }
+
+      .baby-content {
+        padding: 35px 25px;
+      }
+
+      .feature-list {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .logo {
+        font-size: 1rem;
+      }
+
+      .logo-mark {
+        width: 34px;
+        height: 34px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item,
+      .gallery-item:nth-child(1),
+      .gallery-item:nth-child(6) {
+        height: 360px;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+    <div class="container nav">
+
+      <a href="#home" class="logo">
+        <span class="logo-mark">ME</span>
+        MERCY EMPIRE
+      </a>
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            class="nav-cta"
+            href="https://wa.me/2347060776186?text=Hello%20Mercy%20Empire%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+            target="_blank"
+          >
+            WhatsApp
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+          <div class="eyebrow">
+            Beauty • Fashion • Style
+          </div>
+
+          <h1>
+            BEAUTY.<br />
+            FASHION.<br />
+            <span>STYLE.</span>
+          </h1>
+
+          <p class="hero-text">
+            Discover a beautiful blend of professional hairdressing,
+            fashion designing, stylish accessories, and quality baby wear
+            and essentials — all in one place.
+          </p>
+
+          <div class="hero-tags">
+            <span>Hairdressing</span>
+            <span>Fashion Designing</span>
+            <span>Accessories</span>
+            <span>Baby Wear</span>
+          </div>
+
+          <div class="buttons">
+
+            <a href="#gallery" class="btn btn-primary">
+              View Our Work →
+            </a>
+
+            <a
+              href="https://wa.me/2347060776186?text=Hello%20Mercy%20Empire%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+              target="_blank"
+              class="btn btn-secondary"
+            >
+              Chat on WhatsApp
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-image-wrap reveal">
+
+          <div class="hero-image">
+            <img
+              src="images/curly-hairstyle.jpg"
+              alt="Mercy Empire original hairstyle work"
+              onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+            />
+          </div>
+
+          <div class="hero-badge">
+            <strong>Mercy Empire</strong>
+            <span>Beauty & Fashion</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="about" id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-card reveal">
+
+          <img
+            src="images/braided-hairstyle.jpg"
+            alt="Mercy Empire original braided hairstyle"
+            onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+          />
+
+          <div class="about-card-label">
+            Original Mercy Empire Work
+          </div>
+
+        </div>
+
+
+        <div class="about-content reveal">
+
+          <div class="eyebrow">
+            About Mercy Empire
+          </div>
+
+          <h3>
+            Where beauty meets personal style.
+          </h3>
+
+          <p>
+            MERCY EMPIRE is a fashion and lifestyle brand offering
+            professional hairdressing, fashion designing, stylish
+            accessories, and quality baby wear and essentials.
+          </p>
+
+          <p>
+            We are committed to providing beautiful, quality products
+            and services that meet the needs of women, families, and
+            little ones.
+          </p>
+
+          <ul class="feature-list">
+            <li>Professional Hairdressing</li>
+            <li>Fashion Designing</li>
+            <li>Stylish Accessories</li>
+            <li>Baby Wear & Essentials</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section class="services" id="services">
+
+      <div class="container">
+
+        <div class="section-heading center reveal">
+
+          <div class="eyebrow">
+            What We Offer
+          </div>
+
+          <h2>
+            Everything you need to express your style.
+          </h2>
+
+          <p>
+            Explore the different services and product categories
+            available from Mercy Empire.
+          </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+          <article class="service-card reveal">
+
+            <div class="service-icon">✂</div>
+
+            <h3>Hairdressing</h3>
+
+            <p>
+              Beautiful hairstyles created to complement your look
+              and personal style.
+            </p>
+
+          </article>
+
+
+          <article class="service-card reveal">
+
+            <div class="service-icon">♢</div>
+
+            <h3>Fashion Designing</h3>
+
+            <p>
+              Fashion pieces designed with creativity, personality,
+              and attention to detail.
+            </p>
+
+          </article>
+
+
+          <article class="service-card reveal">
+
+            <div class="service-icon">✦</div>
+
+            <h3>Accessories</h3>
+
+            <p>
+              Stylish accessories and beautiful finishing touches
+              to complete your outfit.
+            </p>
+
+          </article>
+
+
+          <article class="service-card reveal">
+
+            <div class="service-icon">♡</div>
+
+            <h3>Baby Wear & Essentials</h3>
+
+            <p>
+              Baby wear and everyday essentials for your little ones.
+              Contact us to ask about available items.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALLERY
+    ========================== -->
+
+    <section class="gallery" id="gallery">
+
+      <div class="container">
+
+        <div class="section-heading center reveal">
+
+          <div class="eyebrow">
+            Our Gallery
+          </div>
+
+          <h2>
+            A glimpse of Mercy Empire.
+          </h2>
+
+          <p>
+            Explore selected hairstyles, accessories, and fashion work.
+          </p>
+
+        </div>
+
+
+        <div class="filter-buttons">
+
+          <button class="filter-btn active" data-filter="all">
+            All
+          </button>
+
+          <button class="filter-btn" data-filter="hair">
+            Hair
+          </button>
+
+          <button class="filter-btn" data-filter="accessories">
+            Accessories
+          </button>
+
+          <button class="filter-btn" data-filter="fashion">
+            Fashion
+          </button>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+
+          <!-- ORIGINAL -->
+
+          <article class="gallery-item reveal" data-category="hair">
+
+            <img
+              src="images/curly-hairstyle.jpg"
+              alt="Curly hairstyle by Mercy Empire"
+              onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+            />
+
+            <div class="gallery-overlay">
+              <strong>Curly Hairstyle</strong>
+              <span class="original-badge">
+                ✦ Mercy Empire Original
+              </span>
+            </div>
+
+          </article>
+
+
+          <!-- ORIGINAL -->
+
+          <article class="gallery-item reveal" data-category="hair">
+
+            <img
+              src="images/braided-hairstyle.jpg"
+              alt="Braided hairstyle by Mercy Empire"
+              onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+            />
+
+            <div class="gallery-overlay">
+              <strong>Braided Hairstyle</strong>
+              <span class="original-badge">
+                ✦ Mercy Empire Original
+              </span>
+            </div>
+
+          </article>
+
+
+          <!-- ORIGINAL -->
+
+          <article class="gallery-item reveal" data-category="accessories">
+
+            <img
+              src="images/pastel-scrunchies.jpg"
+              alt="Pastel scrunchies by Mercy Empire"
+              onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+            />
+
+            <div class="gallery-overlay">
+              <strong>Pastel Scrunchies</strong>
+              <span class="original-badge">
+                ✦ Mercy Empire Original
+              </span>
+            </div>
+
+          </article>
+
+
+          <!-- ORIGINAL -->
+
+          <article class="gallery-item reveal" data-category="accessories">
+
+            <img
+              src="images/neutral-scrunchies.jpg"
+              alt="Neutral tone scrunchies by Mercy Empire"
+              onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+            />
+
+            <div class="gallery-overlay">
+              <strong>Neutral Scrunchies</strong>
+              <span class="original-badge">
+                ✦ Mercy Empire Original
+              </span>
+            </div>
+
+          </article>
+
+
+          <!-- SAMPLE -->
+
+          <article class="gallery-item reveal" data-category="fashion">
+
+            <img
+              src="images/green-jumpsuit.jpg"
+              alt="Green jumpsuit fashion inspiration"
+              onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+            />
+
+            <div class="gallery-overlay">
+              <strong>Green Jumpsuit</strong>
+              <span class="sample-badge">
+                Sample / Inspiration
+              </span>
+            </div>
+
+          </article>
+
+
+          <!-- SAMPLE -->
+
+          <article class="gallery-item reveal" data-category="fashion">
+
+            <img
+              src="images/red-white-dress.jpg"
+              alt="Red and white dress fashion inspiration"
+              onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+            />
+
+            <div class="gallery-overlay">
+              <strong>Red & White Dress</strong>
+              <span class="sample-badge">
+                Sample / Inspiration
+              </span>
+            </div>
+
+          </article>
+
+
+          <!-- SAMPLE -->
+
+          <article class="gallery-item reveal" data-category="fashion">
+
+            <img
+              src="images/floral-skirt.jpg"
+              alt="Floral skirt fashion inspiration"
+              onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+            />
+
+            <div class="gallery-overlay">
+              <strong>Floral Skirt</strong>
+              <span class="sample-badge">
+                Sample / Inspiration
+              </span>
+            </div>
+
+          </article>
+
+
+          <!-- SAMPLE -->
+
+          <article class="gallery-item reveal" data-category="fashion">
+
+            <img
+              src="images/blue-corset.jpg"
+              alt="Blue corset fashion inspiration"
+              onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+            />
+
+            <div class="gallery-overlay">
+              <strong>Blue Corset</strong>
+              <span class="sample-badge">
+                Sample / Inspiration
+              </span>
+            </div>
+
+          </article>
+
+
+          <!-- SAMPLE -->
+
+          <article class="gallery-item reveal" data-category="fashion">
+
+            <img
+              src="images/black-orange-blouse.jpg"
+              alt="Black and orange blouse fashion inspiration"
+              onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+            />
+
+            <div class="gallery-overlay">
+              <strong>Black & Orange Blouse</strong>
+              <span class="sample-badge">
+                Sample / Inspiration
+              </span>
+            </div>
+
+          </article>
+
+
+          <!-- SAMPLE -->
+
+          <article class="gallery-item reveal" data-category="fashion">
+
+            <img
+              src="images/formal-outfit.jpg"
+              alt="Gold and silver formal outfit inspiration"
+              onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+            />
+
+            <div class="gallery-overlay">
+              <strong>Formal Outfit</strong>
+              <span class="sample-badge">
+                Sample / Inspiration
+              </span>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURED ORIGINAL DESIGN
+    ========================== -->
+
+    <section class="featured">
+
+      <div class="container featured-grid">
+
+        <div class="featured-image reveal">
+
+          <img
+            src="images/ankara-corset.jpg"
+            alt="Original Ankara corset design by Mercy Empire"
+            onerror="this.style.display='none'; this.parentElement.classList.add('image-placeholder')"
+          />
+
+        </div>
+
+
+        <div class="featured-content reveal">
+
+          <div class="eyebrow">
+            Featured Design
+          </div>
+
+          <span class="featured-note">
+            ✦ Original Mercy Empire Work
+          </span>
+
+          <h2>
+            Designed to make a statement.
+          </h2>
+
+          <p>
+            Discover the creativity behind Mercy Empire's fashion
+            designs. This original Ankara corset piece represents
+            the brand's approach to expressive and stylish fashion.
+          </p>
+
+          <a
+            href="https://wa.me/2347060776186?text=Hello%20Mercy%20Empire%2C%20I%27d%20like%20to%20ask%20about%20your%20fashion%20designs."
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            Ask About Fashion Designing
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         BABY SECTION
+    ========================== -->
+
+    <section class="baby">
+
+      <div class="container">
+
+        <div class="baby-box reveal">
+
+          <div class="baby-image">
+
+            <div class="baby-placeholder">
+
+              <div class="baby-icon">🧸</div>
+
+              <h3>
+                For Your Little Ones
+              </h3>
+
+              <p>
+                Baby wear and everyday essentials.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="baby-content">
+
+            <div class="eyebrow">
+              Baby Collection
+            </div>
+
+            <h2>
+              Little details. Big smiles.
+            </h2>
+
+            <p>
+              Explore baby wear and everyday essentials available
+              through Mercy Empire.
+            </p>
+
+            <div class="sample-note">
+              Product images in this section are currently
+              representative/sample visuals. Contact Mercy Empire
+              to confirm currently available items.
+            </div>
+
+            <a
+              href="https://wa.me/2347060776186?text=Hello%20Mercy%20Empire%2C%20I%27d%20like%20to%20ask%20about%20your%20baby%20wear%20and%20essentials."
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Ask About Baby Items
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact" id="contact">
+
+      <div class="container">
+
+        <div class="section-heading center reveal">
+
+          <div class="eyebrow">
+            Get In Touch
+          </div>
+
+          <h2>
+            Ready to make an enquiry?
+          </h2>
+
+          <p>
+            Contact Mercy Empire directly for services,
+            products, availability, or fashion enquiries.
+          </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+          <div class="contact-card reveal">
+
+            <h3>
+              Contact Details
+            </h3>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">⌖</div>
+
+              <div>
+                <small>Location</small>
+                <strong>
+                  No. 24 Omoku Street, D/Line, Port Harcourt
+                </strong>
+              </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">☎</div>
+
+              <div>
+                <small>Phone / WhatsApp</small>
+                <strong>
+                  0706 077 6186
+                </strong>
+              </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">◎</div>
+
+              <div>
+                <small>Instagram</small>
+                <strong>
+                  Mercy Empire
+                </strong>
+              </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">♪</div>
+
+              <div>
+                <small>TikTok</small>
+                <strong>
+                  Mercy Empire
+                </strong>
+              </div>
+
+            </div>
+
+
+            <a
+              href="https://wa.me/2347060776186?text=Hello%20Mercy%20Empire%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+              target="_blank"
+              class="btn btn-primary"
+              style="width:100%; margin-top:10px;"
+            >
+              Chat on WhatsApp
+            </a>
+
+          </div>
+
+
+          <div class="map-card reveal">
+
+            <div class="map-pin">📍</div>
+
+            <h3>
+              Visit Mercy Empire
+            </h3>
+
+            <p>
+              No. 24 Omoku Street, D/Line, Port Harcourt.
+            </p>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=No.+24+Omoku+Street%2C+D%2FLine%2C+Port+Harcourt"
+              target="_blank"
+              class="btn btn-secondary"
+            >
+              Get Directions →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <a href="#home" class="logo footer-logo">
+            <span class="logo-mark">ME</span>
+            MERCY EMPIRE
+          </a>
+
+          <p class="footer-text">
+            Beauty, fashion, accessories, baby wear and essentials —
+            bringing style and creativity together.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <div class="footer-title">
+            Explore
+          </div>
+
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <div class="footer-title">
+            Enquiries
+          </div>
+
+          <ul class="footer-links">
+            <li>
+              <a href="tel:+2347060776186">
+                0706 077 6186
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://wa.me/2347060776186"
+                target="_blank"
+              >
+                WhatsApp
+              </a>
+            </li>
+
+            <li>
+              Port Harcourt, Nigeria
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="copyright">
+        © <span id="year"></span> MERCY EMPIRE. All rights reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       FLOATING WHATSAPP
+  ========================== -->
+
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/2347060776186?text=Hello%20Mercy%20Empire%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+    target="_blank"
+    aria-label="Chat with Mercy Empire on WhatsApp"
+  >
+    ☎
+  </a>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    /* Mobile navigation */
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+
+      navLinks.classList.toggle("open");
+
+      const isOpen = navLinks.classList.contains("open");
+
+      menuBtn.setAttribute("aria-expanded", isOpen);
+
+      menuBtn.textContent = isOpen ? "×" : "☰";
+
+    });
+
+
+    /* Close mobile menu after clicking a link */
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        navLinks.classList.remove("open");
+
+        menuBtn.setAttribute("aria-expanded", "false");
+
+        menuBtn.textContent = "☰";
+
+      });
+
+    });
+
+
+    /* Gallery filters */
+
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const galleryItems = document.querySelectorAll(".gallery-item");
+
+    filterButtons.forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        filterButtons.forEach(btn => {
+          btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        const filter = button.dataset.filter;
+
+        galleryItems.forEach(item => {
+
+          if (
+            filter === "all" ||
+            item.dataset.category === filter
+          ) {
+            item.classList.remove("hidden");
+          } else {
+            item.classList.add("hidden");
+          }
+
+        });
+
+      });
+
+    });
+
+
+    /* Scroll reveal animation */
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+      entries => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+            revealObserver.unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+
+    revealElements.forEach(element => {
+      revealObserver.observe(element);
+    });
+
+
+    /* Current year */
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+  </script>
+
+</body>
+</html>
